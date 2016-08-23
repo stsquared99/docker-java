@@ -119,11 +119,23 @@
 			<groupId>com.kohlschutter.junixsocket</groupId>
 			<artifactId>junixsocket-common</artifactId>
 			<version>${junixsocket.version}</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>log4j</artifactId>
+					<groupId>log4j</groupId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.kohlschutter.junixsocket</groupId>
 			<artifactId>junixsocket-native-common</artifactId>
 			<version>${junixsocket.version}</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>log4j</artifactId>
+					<groupId>log4j</groupId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.commons</groupId>
